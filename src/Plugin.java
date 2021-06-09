@@ -18,6 +18,8 @@ public class Plugin {
 	private Text TimePoint;
 	private Text ImageName;
 	private Text Size;
+	private Text text;
+	private Text text_1;
 
 	/**
 	 * Launch the application.
@@ -132,6 +134,12 @@ public class Plugin {
 		Label lblInImagej = new Label(shell, SWT.NONE);
 		lblInImagej.setText("in ImageJ:");
 		lblInImagej.setBounds(75, 258, 81, 46);
+		
+		text = new Text(shell, SWT.BORDER);
+		text.setBounds(162, 10, 106, 25);
+		
+		text_1 = new Text(shell, SWT.BORDER);
+		text_1.setBounds(162, 41, 106, 25);
 
 	}
 }
