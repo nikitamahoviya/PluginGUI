@@ -10,8 +10,8 @@ import org.eclipse.swt.events.SelectionEvent;
 public class Plugin {
 
 	protected Shell shell;
-	private Text EntertVCellUser;
-	private Text EntertVCellModel;
+	private Text EnterVCellUser;
+	private Text EnterVCellModel;
 	private Text Application;
 	private Text Simulation;
 	private Text Variable;
