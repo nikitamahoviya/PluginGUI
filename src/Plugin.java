@@ -115,6 +115,29 @@ public class Plugin {
 		OKbutton.addSelectionListener(new SelectionAdapter() {
 			@Override
 			public void widgetSelected(SelectionEvent e) {
+				String EnterVCellUser;
+				String EnterVCellModel;
+				String Application;
+				String Simulation;
+				String Variable;
+				int TimePoint;
+				String ImageName;
+				int Size;
+				
+				try {
+				     EnterVCellUser=String.valueOf(EnterVCellUser);
+				     EnterVCellModel=String.valueOf(EnterVCellModel);
+				     Application=String.valueOf(Application);
+				     Simulation=String.valueOf(Simulation);
+				     Variable=String.valueOf(Variable);
+				     TimePoint=Integer.valueOf(TimePoint);
+				     ImageName=String.valueOf(ImageName);
+				     Size=Integer.valueOf(Size);
+				     
+				    }catch(Exception e){
+				        
+					JOptionPane.showMessageDialog(null, "Please enter a valid VCell Model");
+				    }
 			}
 		});
 		OKbutton.setBounds(173, 309, 60, 35);
