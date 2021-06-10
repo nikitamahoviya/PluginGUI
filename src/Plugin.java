@@ -12,12 +12,12 @@ public class Plugin {
 	protected Shell shell;
 	private Text EnterVCellUser;
 	private Text EnterVCellModel;
-	private Text Application;
-	private Text Simulation;
-	private Text Variable;
-	private Text TimePoint;
-	private Text ImageName;
-	private Text Size;
+	private Text EnterApplication;
+	private Text EnterSimulation;
+	private Text EnterVariable;
+	private Text EnterTimePoint;
+	private Text EnterImageName;
+	private Text EnterSize;
 
 	/**
 	 * Launch the application.
@@ -93,23 +93,23 @@ public class Plugin {
 		EnterVCellModel = new Text(shell, SWT.BORDER);
 		EnterVCellModel.setBounds(162, 38, 106, 25);
 
-		Application = new Text(shell, SWT.BORDER);
-		Application.setBounds(162, 72, 106, 25);
+		EnterApplication = new Text(shell, SWT.BORDER);
+		EnterApplication.setBounds(162, 72, 106, 25);
 
-		Simulation = new Text(shell, SWT.BORDER);
-		Simulation.setBounds(162, 100, 106, 25);
+		EnterSimulation = new Text(shell, SWT.BORDER);
+		EnterSimulation.setBounds(162, 100, 106, 25);
 
-		Variable = new Text(shell, SWT.BORDER);
-		Variable.setBounds(163, 131, 106, 25);
+		EnterVariable = new Text(shell, SWT.BORDER);
+		EnterVariable.setBounds(163, 131, 106, 25);
 
-		TimePoint = new Text(shell, SWT.BORDER);
-		TimePoint.setBounds(163, 164, 106, 25);
+		EnterTimePoint = new Text(shell, SWT.BORDER);
+		EnterTimePoint.setBounds(163, 164, 106, 25);
 
-		ImageName = new Text(shell, SWT.BORDER);
-		ImageName.setBounds(162, 198, 106, 25);
+		EnterImageName = new Text(shell, SWT.BORDER);
+		EnterImageName.setBounds(162, 198, 106, 25);
 
-		Size = new Text(shell, SWT.BORDER);
-		Size.setBounds(162, 258, 106, 25);
+		EnterSize = new Text(shell, SWT.BORDER);
+		EnterSize.setBounds(162, 258, 106, 25);
 
 		Button OKbutton = new Button(shell, SWT.NONE);
 		OKbutton.addSelectionListener(new SelectionAdapter() {
@@ -117,22 +117,22 @@ public class Plugin {
 			public void widgetSelected(SelectionEvent e) {
 				String EnterVCellUser;
 				String EnterVCellModel;
-				String Application;
-				String Simulation;
-				String Variable;
-				int TimePoint;
-				String ImageName;
-				int Size;
+				String EnterApplication;
+				String EnterSimulation;
+				String EnterVariable;
+				int EnterTimePoint;
+				String EnterImageName;
+				int EnterSize;
 				
 				try {
 				     EnterVCellUser=String.valueOf(EnterVCellUser);
 				     EnterVCellModel=String.valueOf(EnterVCellModel);
-				     Application=String.valueOf(Application);
-				     Simulation=String.valueOf(Simulation);
-				     Variable=String.valueOf(Variable);
-				     TimePoint=Integer.valueOf(TimePoint);
-				     ImageName=String.valueOf(ImageName);
-				     Size=Integer.valueOf(Size);
+				     EnterApplication=String.valueOf(EnterApplication);
+				     EnterSimulation=String.valueOf(EnterSimulation);
+				     EnterVariable=String.valueOf(EnterVariable);
+				     EnterTimePoint=Integer.valueOf(EnterTimePoint);
+				     EnterImageName=String.valueOf(EnterImageName);
+				     EnterSize=Integer.valueOf(EnterSize);
 				     
 				    }catch(Exception e){
 				        
